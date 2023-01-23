@@ -39,3 +39,13 @@ in customer.js in router.get('/',){res.render('index', {customers: customers})}
 
 in server.js : app.use('/api/customer', customers)
 
+
+
+// faker librare
+in routes folder make file faker.js
+>npm i faker
+require express and router and faker and ../models/customer
+and make function in this file => look it 
+and call it in serverfile:
+const fakeData = require("/routes/faker");
+app.use("/api/fake", fakeData);

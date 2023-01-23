@@ -1,171 +1,143 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.108.0" />
-    <title>Sticky Footer Navbar Template · Bootstrap v5.3</title>
+<!doctype html>
+<html lang="en">
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/"
-    />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Starter Template · Bootstrap v5.0</title>
 
-    <link
-      href="/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
-    <meta name="theme-color" content="#712cf9" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/common.css">
+
+
+    <meta name="theme-color" content="#7952b3">
+
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
 
+
     <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet" />
-  </head>
-  <body class="d-flex flex-column h-100">
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+    <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </form>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"
+                method="GET" action="/api/search/<% value = '' %>">
+                 <input class="form-control mr-sm-2" type="text" name="search"
+                  placeholder="Search" aria-label="Search">
+                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+               </form>
+            </div>
         </div>
-      </div>
     </nav>
 
     <main class="container">
-      <div class="starter-template text-center py-5 px-3">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Full Name</th>
-              <th scope="col">Mobile</th>
-              <th scope="col">Is Gold</th>
-              <th scope="col">Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% let counter = 1 %> <% customers.forEach(item=>{%>
-            <tr>
-              <th><% counter ++%></th>
-              <td><%= item.name %></td>
-              <td><%= item.mobile %></td>
-              <td>
-                <%= if(item.isGold) {%>
-                <img width="25" height="30" src="/public/assets/right.png" />
-                <% } else {%>
-                <img width="25" height="30" src="/public/assets/wrong.png" />
-                <%}%>
-              </td>
-              <td>
-                <a href="/api/customer/<%= item._id %>" class="btn btn-primary"
-                  >Details</a
-                >
-              </td>
-            </tr>
-            <% } )%>
-          </tbody>
-        </table>
-      </div>
-    </main>
 
-    <script
-      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="starter-template text-center py-5 px-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Is Gold</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% let counter=1 %>
+                        <% customers.forEach(item=>{ %>
+                            <tr>
+                                <td>
+                                    <%= counter++ %>
+                                </td>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.mobile %>
+                                </td>
+                                <td>
+                                    <% if(item.isGold) { %>
+                                        <img width='25' height='30' src='/public/assets/right.png'>
+                                        <% } else { %>
+                                            <img width='25' height='30' src='/public/assets/wrong.png'>
+                                            <%} %>
+                                </td>
+                                <td> <a href="/api/customer/show/<%= item._id %>" class="btn btn-primary">Details</a></td>
+                                <td>
+                                    <a class="btn btn-raised btn-danger" href="/api/customer/delete/<%= item._id %>">Delete</a></td> 
+                                </td>
+                            </tr>
+                            <% })%>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </main><!-- /.container -->
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
