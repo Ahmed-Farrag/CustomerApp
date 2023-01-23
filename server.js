@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const app = express();
 
 const customers = require("./routes/customer");
-// const fakeData = require("./routes/faker");
 const fakeData = require('./routes/faker');
 
 // connect to db
@@ -24,7 +23,6 @@ app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/public", express.static(__dirname + "/public"));
 
 app.use("/api/customer", customers);
-// app.use("/api/fake", fakeData);
 app.use('/api/fake', fakeData);
 
 const PORT = process.env.PORT || 3000;
