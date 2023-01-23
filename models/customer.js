@@ -24,13 +24,16 @@ const Customer = mongoose.model(
 );
 
 function validateCustomer(customer) {
-  const Schema = Joi.object({
-    name: Joi.String().min(3).max(255).require(),
-    mobile: Joi.String().min(3).max(15).require(),
-    isGold: Joi.Boolean(),
-  });
-  return Schema.validate(customer);
+  const schema = Joi.object(
+      {
+      name : Joi.string().min(3).max(255).required(),
+      mobile: Joi.string().min(3).max(15).required(),
+      isGold: Joi.boolean()
+     }
+ );
+ return schema.validate(customer);
 }
 
 exports.Customer = Customer;
 exports.validate = validateCustomer;
+
