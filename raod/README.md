@@ -52,3 +52,5 @@ app.use("/api/fake", fakeData);
 
 //method-override from npm to use http verbs as PUT or DELETE
 //require it and take the method from npm and put it in server.js file
+
+// make search method and RegExp in it

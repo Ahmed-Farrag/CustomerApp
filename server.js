@@ -5,6 +5,7 @@ const app = express();
 const customers = require("./routes/customer");
 const fakeData = require('./routes/faker');
 const methodOverride = require('method-override')
+const search = require('./routes/search')
 
 // connect to db
 mongoose
@@ -36,6 +37,7 @@ app.use("/public", express.static(__dirname + "/public"));
 
 app.use("/api/customer", customers);
 app.use('/api/fake', fakeData);
+app.use('/api/search', search);
 
 
 

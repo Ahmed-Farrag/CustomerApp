@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const { validate, Customer } = require("../models/customer");
 
-router.get("/", async (req, res) => {
-  const customers = await Customer.find().sort("name");
-  res.render("index", { customers: customers });
+router.get('/', async (req, res) => {
+  const customers = await Customer.find().sort('name');
+  res.render('index' , {customers:customers});
 });
 router.get("/add", (req, res) => {
   res.render("add-customer");
