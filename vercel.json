@@ -7,6 +7,6 @@
        { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "/index" }
+       { "src": "/(.*)", "dest": "/views/index.ejs" }
     ]
  }
