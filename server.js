@@ -36,7 +36,7 @@ app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/public", express.static(__dirname + "/public"));
 
 app.use("/", customers);
-app.use("/api/customer", customers);
+// app.use("/api/customer", customers);
 app.use('/api/fake', fakeData);
 app.use('/api/search', search);
 
