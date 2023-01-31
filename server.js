@@ -47,8 +47,7 @@ const app = express();
 // app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
 
 
-
-app.set("/", (req, res)=>{
+app.get("/", (req, res)=>{
   res.send("hello ahmed")
 })
 
