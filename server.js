@@ -35,7 +35,7 @@ app.set("view engine", "ejs");
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/public", express.static(__dirname + "/public"));
 
-// app.use("/", customers);
+app.use("/", customers);
 app.use("/api/customer", customers);
 app.use('/api/fake', fakeData);
 app.use('/api/search', search);
@@ -43,5 +43,10 @@ app.use('/api/search', search);
 
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+
+
+const server = app.listen(process.env.PORT || 3000)
+const portNumber = server.address().port
+console.log(`port is open on ${portNumber}`);
