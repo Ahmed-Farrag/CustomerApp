@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const app = express();
 
 const customers = require("./routes/customer");
@@ -8,13 +8,13 @@ const methodOverride = require('method-override')
 const search = require('./routes/search')
 
 // connect to db
-mongoose
-  .connect("mongodb://localhost/addy", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("connected to DB Server..."))
-  .catch((err) => console.log("connected to DB Server Faild"));
+// mongoose
+//   .connect("mongodb://localhost/addy", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => console.log("connected to DB Server..."))
+//   .catch((err) => console.log("connected to DB Server Faild"));
 
 // middleware
 app.use(express.json());
@@ -36,7 +36,7 @@ app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/", customers);
-// app.use("/api/customer", customers);
+app.use("/api/customer", customers);
 app.use('/api/fake', fakeData);
 app.use('/api/search', search);
 
